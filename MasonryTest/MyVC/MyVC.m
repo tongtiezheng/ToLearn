@@ -33,7 +33,7 @@
     [super viewDidLoad];
     
     TZDisplayView *view = [[TZDisplayView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 200)];
-    [self.view addSubview:view];
+    [self.view addSubview: view];
     
 }
 
