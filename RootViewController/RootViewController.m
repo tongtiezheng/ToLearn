@@ -16,7 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.navigationController.navigationBar.titleTextAttributes = [NSDictionary dictionaryWithObjectsAndKeys:[UIColor whiteColor],NSForegroundColorAttributeName,[UIFont fontWithName:@"Helvetica-Bold" size:17.0],NSFontAttributeName, nil];
+    self.navigationController.navigationBar.titleTextAttributes = [NSDictionary dictionaryWithObjectsAndKeys:RGBColor(219, 44, 56),NSForegroundColorAttributeName,[UIFont fontWithName:@"Helvetica-Bold" size:17.0],NSFontAttributeName, nil];
 //    [self.tabBarController.navigationController.navigationBar setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:
 //                                                [UIColor lightGrayColor], NSForegroundColorAttributeName,
 //                                                [UIColor lightGrayColor], NSShadowAttributeName,

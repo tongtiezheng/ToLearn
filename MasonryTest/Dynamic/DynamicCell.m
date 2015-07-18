@@ -29,7 +29,7 @@
     
     UILabel *titleLbl = [UILabel new];
     titleLbl.text = @"";
-    titleLbl.backgroundColor = [UIColor redColor];
+    titleLbl.backgroundColor = [UIColor clearColor];
     titleLbl.numberOfLines = 0;
     titleLbl.font = [UIFont systemFontOfSize:14.0f];
     [self.contentView addSubview:titleLbl];

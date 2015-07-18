@@ -7,8 +7,11 @@
 //
 
 #import "MyVC.h"
+#import "TZDisplayView.h"
 
 @interface MyVC ()
+
+
 
 @end
 
@@ -28,6 +31,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    TZDisplayView *view = [[TZDisplayView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 200)];
+    [self.view addSubview:view];
     
 }
 
