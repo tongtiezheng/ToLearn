@@ -7,6 +7,7 @@
 //
 
 #import "ChatVC.h"
+#import "TZWindow.h"
 
 
 @interface ChatVC ()
@@ -35,8 +36,9 @@
     UIButton *btn = [UIButton new];
     btn.backgroundColor = [UIColor redColor];
     [btn setTitle:@"AAA" forState:UIControlStateNormal];
-    [btn addTarget:self action:@selector(btnDragged:withEvent:) forControlEvents:UIControlEventTouchDragInside];
-    [btn addTarget:self action:@selector(btnDragged:withEvent:) forControlEvents:UIControlEventTouchDragOutside];
+    [btn addTarget:self action:@selector(click) forControlEvents:UIControlEventTouchUpInside];
+//    [btn addTarget:self action:@selector(btnDragged:withEvent:) forControlEvents:UIControlEventTouchDragInside];
+//    [btn addTarget:self action:@selector(btnDragged:withEvent:) forControlEvents:UIControlEventTouchDragOutside];
     [self.view addSubview:btn];
     [btn mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(ws.view).with.offset(100);
@@ -45,6 +47,11 @@
     }];
     
 }
+
+- (void)click {
+    [[TZWindow shareInstance] showAlert];
+}
+
 //UIButton边界事件
 - (void)btnDragged:(UIButton *)sender withEvent:(UIEvent *)event {
     UITouch *touch = [[event allTouches] anyObject];

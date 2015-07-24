@@ -14,6 +14,7 @@
 		BD254C271B55052F006032E1 /* DynamicCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BD254C261B55052F006032E1 /* DynamicCell.m */; };
 		BD254C291B550B45006032E1 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = BD254C281B550B45006032E1 /* data.json */; };
 		BD38B1AD1B19FB1600FE8BBD /* RootTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD38B1AC1B19FB1600FE8BBD /* RootTabBarController.m */; };
+		BD6CB61F1B6219DF00C428E8 /* TZWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = BD6CB61E1B6219DF00C428E8 /* TZWindow.m */; };
 		BD7D67BF1B59F46100654AEC /* TZDisplayView.m in Sources */ = {isa = PBXBuildFile; fileRef = BD7D67BE1B59F46100654AEC /* TZDisplayView.m */; };
 		BDBB719B1B19EE6F00B88225 /* DynamicVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BDBB719A1B19EE6F00B88225 /* DynamicVC.m */; };
 		BDBB71A01B19EEAE00B88225 /* RootNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BDBB719F1B19EEAE00B88225 /* RootNavigationViewController.m */; };
@@ -59,6 +60,8 @@
 		BD254C281B550B45006032E1 /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
 		BD38B1AB1B19FB1600FE8BBD /* RootTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RootTabBarController.h; path = RootViewController/RootTabBarController.h; sourceTree = "<group>"; };
 		BD38B1AC1B19FB1600FE8BBD /* RootTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RootTabBarController.m; path = RootViewController/RootTabBarController.m; sourceTree = "<group>"; };
+		BD6CB61D1B6219DF00C428E8 /* TZWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TZWindow.h; path = ChatVC/CustomWindow/TZWindow.h; sourceTree = "<group>"; };
+		BD6CB61E1B6219DF00C428E8 /* TZWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TZWindow.m; path = ChatVC/CustomWindow/TZWindow.m; sourceTree = "<group>"; };
 		BD7D67BD1B59F46100654AEC /* TZDisplayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TZDisplayView.h; path = MyVC/View/TZDisplayView.h; sourceTree = "<group>"; };
 		BD7D67BE1B59F46100654AEC /* TZDisplayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TZDisplayView.m; path = MyVC/View/TZDisplayView.m; sourceTree = "<group>"; };
 		BDBB71991B19EE6F00B88225 /* DynamicVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DynamicVC.h; path = Dynamic/DynamicVC.h; sourceTree = "<group>"; };
@@ -128,6 +131,15 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		BD6CB61C1B6219B100C428E8 /* CustomWindow */ = {
+			isa = PBXGroup;
+			children = (
+				BD6CB61D1B6219DF00C428E8 /* TZWindow.h */,
+				BD6CB61E1B6219DF00C428E8 /* TZWindow.m */,
+			);
+			name = CustomWindow;
+			sourceTree = "<group>";
+		};
 		BD7D67BB1B59F3A900654AEC /* Cell */ = {
 			isa = PBXGroup;
 			children = (
@@ -179,6 +191,7 @@
 		BDBB71961B19EE2D00B88225 /* Chat */ = {
 			isa = PBXGroup;
 			children = (
+				BD6CB61C1B6219B100C428E8 /* CustomWindow */,
 				BDBB71A11B19EF0300B88225 /* ChatVC.h */,
 				BDBB71A21B19EF0300B88225 /* ChatVC.m */,
 			);
@@ -449,6 +462,7 @@
 				BD7D67BF1B59F46100654AEC /* TZDisplayView.m in Sources */,
 				BD38B1AD1B19FB1600FE8BBD /* RootTabBarController.m in Sources */,
 				BD254C271B55052F006032E1 /* DynamicCell.m in Sources */,
+				BD6CB61F1B6219DF00C428E8 /* TZWindow.m in Sources */,
 				BDBB71AC1B19EF7D00B88225 /* MyVC.m in Sources */,
 				BDBB71A31B19EF0300B88225 /* ChatVC.m in Sources */,
 				BDD1FB021B174B9B002B9C12 /* ViewController.m in Sources */,
