@@ -14,6 +14,7 @@
 		BD254C271B55052F006032E1 /* DynamicCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BD254C261B55052F006032E1 /* DynamicCell.m */; };
 		BD254C291B550B45006032E1 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = BD254C281B550B45006032E1 /* data.json */; };
 		BD38B1AD1B19FB1600FE8BBD /* RootTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD38B1AC1B19FB1600FE8BBD /* RootTabBarController.m */; };
+		BD52D5121B66166A001C499B /* News.m in Sources */ = {isa = PBXBuildFile; fileRef = BD52D5111B66166A001C499B /* News.m */; };
 		BD6CB61F1B6219DF00C428E8 /* TZWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = BD6CB61E1B6219DF00C428E8 /* TZWindow.m */; };
 		BD7D67BF1B59F46100654AEC /* TZDisplayView.m in Sources */ = {isa = PBXBuildFile; fileRef = BD7D67BE1B59F46100654AEC /* TZDisplayView.m */; };
 		BDBB719B1B19EE6F00B88225 /* DynamicVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BDBB719A1B19EE6F00B88225 /* DynamicVC.m */; };
@@ -32,6 +33,8 @@
 		BDD1FB431B174F09002B9C12 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDD1FB421B174F09002B9C12 /* QuartzCore.framework */; };
 		BDD1FB451B174F10002B9C12 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDD1FB441B174F10002B9C12 /* Foundation.framework */; };
 		BDD1FB471B174F17002B9C12 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDD1FB461B174F17002B9C12 /* CoreGraphics.framework */; };
+		BDD4C6761B66206A00887B38 /* CoreDataManager1.m in Sources */ = {isa = PBXBuildFile; fileRef = BDD4C6751B66206A00887B38 /* CoreDataManager1.m */; };
+		BDD4C67A1B66230500887B38 /* NewsModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BDD4C6781B66230500887B38 /* NewsModel.xcdatamodeld */; };
 		BDE4D7551B465E83005C8A25 /* ComplexCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BDE4D7541B465E83005C8A25 /* ComplexCell.m */; };
 /* End PBXBuildFile section */
 
@@ -60,6 +63,8 @@
 		BD254C281B550B45006032E1 /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
 		BD38B1AB1B19FB1600FE8BBD /* RootTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RootTabBarController.h; path = RootViewController/RootTabBarController.h; sourceTree = "<group>"; };
 		BD38B1AC1B19FB1600FE8BBD /* RootTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RootTabBarController.m; path = RootViewController/RootTabBarController.m; sourceTree = "<group>"; };
+		BD52D5101B66166A001C499B /* News.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = News.h; path = SquarVC/Model/News.h; sourceTree = "<group>"; };
+		BD52D5111B66166A001C499B /* News.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = News.m; path = SquarVC/Model/News.m; sourceTree = "<group>"; };
 		BD6CB61D1B6219DF00C428E8 /* TZWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TZWindow.h; path = ChatVC/CustomWindow/TZWindow.h; sourceTree = "<group>"; };
 		BD6CB61E1B6219DF00C428E8 /* TZWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TZWindow.m; path = ChatVC/CustomWindow/TZWindow.m; sourceTree = "<group>"; };
 		BD7D67BD1B59F46100654AEC /* TZDisplayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TZDisplayView.h; path = MyVC/View/TZDisplayView.h; sourceTree = "<group>"; };
@@ -95,6 +100,10 @@
 		BDD1FB421B174F09002B9C12 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		BDD1FB441B174F10002B9C12 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		BDD1FB461B174F17002B9C12 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		BDD4C6741B66206A00887B38 /* CoreDataManager1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CoreDataManager1.h; path = SquarVC/CoreDataManager/CoreDataManager1.h; sourceTree = "<group>"; };
+		BDD4C6751B66206A00887B38 /* CoreDataManager1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CoreDataManager1.m; path = SquarVC/CoreDataManager/CoreDataManager1.m; sourceTree = "<group>"; };
+		BDD4C6791B66230500887B38 /* NewsModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NewsModel.xcdatamodel; sourceTree = "<group>"; };
+		BDD4C67B1B66235300887B38 /* NewsModel1.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NewsModel1.xcdatamodel; sourceTree = "<group>"; };
 		BDE4D7531B465E83005C8A25 /* ComplexCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ComplexCell.h; path = RecruitVC/ComplexCell.h; sourceTree = "<group>"; };
 		BDE4D7541B465E83005C8A25 /* ComplexCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ComplexCell.m; path = RecruitVC/ComplexCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -129,6 +138,25 @@
 				432FF061F83D211D1CBAD076 /* Pods.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		BD52D50B1B661580001C499B /* CoreDataManager */ = {
+			isa = PBXGroup;
+			children = (
+				BDD4C6741B66206A00887B38 /* CoreDataManager1.h */,
+				BDD4C6751B66206A00887B38 /* CoreDataManager1.m */,
+				BDD4C6781B66230500887B38 /* NewsModel.xcdatamodeld */,
+			);
+			name = CoreDataManager;
+			sourceTree = "<group>";
+		};
+		BD52D50F1B66165C001C499B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BD52D5101B66166A001C499B /* News.h */,
+				BD52D5111B66166A001C499B /* News.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 		BD6CB61C1B6219B100C428E8 /* CustomWindow */ = {
@@ -172,6 +200,8 @@
 		BDBB71941B19EDEF00B88225 /* Squar */ = {
 			isa = PBXGroup;
 			children = (
+				BD52D50F1B66165C001C499B /* Model */,
+				BD52D50B1B661580001C499B /* CoreDataManager */,
 				BDBB71A71B19EF5900B88225 /* SquarVC.h */,
 				BDBB71A81B19EF5900B88225 /* SquarVC.m */,
 			);
@@ -458,12 +488,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				BD1E96271B1A04B700AAD778 /* DynamicDetailVC.m in Sources */,
+				BDD4C67A1B66230500887B38 /* NewsModel.xcdatamodeld in Sources */,
 				BDE4D7551B465E83005C8A25 /* ComplexCell.m in Sources */,
 				BD7D67BF1B59F46100654AEC /* TZDisplayView.m in Sources */,
 				BD38B1AD1B19FB1600FE8BBD /* RootTabBarController.m in Sources */,
 				BD254C271B55052F006032E1 /* DynamicCell.m in Sources */,
 				BD6CB61F1B6219DF00C428E8 /* TZWindow.m in Sources */,
 				BDBB71AC1B19EF7D00B88225 /* MyVC.m in Sources */,
+				BD52D5121B66166A001C499B /* News.m in Sources */,
 				BDBB71A31B19EF0300B88225 /* ChatVC.m in Sources */,
 				BDD1FB021B174B9B002B9C12 /* ViewController.m in Sources */,
 				BD1E96241B19FE3F00AAD778 /* RootViewController.m in Sources */,
@@ -472,6 +504,7 @@
 				BD254C241B5504F7006032E1 /* RootCell.m in Sources */,
 				BDBB71A01B19EEAE00B88225 /* RootNavigationViewController.m in Sources */,
 				BDBB719B1B19EE6F00B88225 /* DynamicVC.m in Sources */,
+				BDD4C6761B66206A00887B38 /* CoreDataManager1.m in Sources */,
 				BDBB71A61B19EF3100B88225 /* RecruitVC.m in Sources */,
 				BDBB71A91B19EF5900B88225 /* SquarVC.m in Sources */,
 				BDBB71B01B19F0C400B88225 /* MTUtil.m in Sources */,
@@ -666,6 +699,21 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		BDD4C6781B66230500887B38 /* NewsModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				BDD4C67B1B66235300887B38 /* NewsModel1.xcdatamodel */,
+				BDD4C6791B66230500887B38 /* NewsModel.xcdatamodel */,
+			);
+			currentVersion = BDD4C67B1B66235300887B38 /* NewsModel1.xcdatamodel */;
+			name = NewsModel.xcdatamodeld;
+			path = SquarVC/CoreDataManager/NewsModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = BDD1FAEE1B174B9B002B9C12 /* Project object */;
 }
