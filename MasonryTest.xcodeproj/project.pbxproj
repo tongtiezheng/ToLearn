@@ -35,6 +35,7 @@
 		BDD1FB471B174F17002B9C12 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDD1FB461B174F17002B9C12 /* CoreGraphics.framework */; };
 		BDD4C6761B66206A00887B38 /* CoreDataManager1.m in Sources */ = {isa = PBXBuildFile; fileRef = BDD4C6751B66206A00887B38 /* CoreDataManager1.m */; };
 		BDD4C67A1B66230500887B38 /* NewsModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BDD4C6781B66230500887B38 /* NewsModel.xcdatamodeld */; };
+		BDD4C6AC1B6A21CE00887B38 /* test.html in Resources */ = {isa = PBXBuildFile; fileRef = BDD4C6AB1B6A21CE00887B38 /* test.html */; };
 		BDE4D7551B465E83005C8A25 /* ComplexCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BDE4D7541B465E83005C8A25 /* ComplexCell.m */; };
 /* End PBXBuildFile section */
 
@@ -104,6 +105,7 @@
 		BDD4C6751B66206A00887B38 /* CoreDataManager1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CoreDataManager1.m; path = SquarVC/CoreDataManager/CoreDataManager1.m; sourceTree = "<group>"; };
 		BDD4C6791B66230500887B38 /* NewsModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NewsModel.xcdatamodel; sourceTree = "<group>"; };
 		BDD4C67B1B66235300887B38 /* NewsModel1.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NewsModel1.xcdatamodel; sourceTree = "<group>"; };
+		BDD4C6AB1B6A21CE00887B38 /* test.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = test.html; sourceTree = "<group>"; };
 		BDE4D7531B465E83005C8A25 /* ComplexCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ComplexCell.h; path = RecruitVC/ComplexCell.h; sourceTree = "<group>"; };
 		BDE4D7541B465E83005C8A25 /* ComplexCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ComplexCell.m; path = RecruitVC/ComplexCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -200,6 +202,7 @@
 		BDBB71941B19EDEF00B88225 /* Squar */ = {
 			isa = PBXGroup;
 			children = (
+				BDD4C6AB1B6A21CE00887B38 /* test.html */,
 				BD52D50F1B66165C001C499B /* Model */,
 				BD52D50B1B661580001C499B /* CoreDataManager */,
 				BDBB71A71B19EF5900B88225 /* SquarVC.h */,
@@ -437,6 +440,7 @@
 			files = (
 				BDD1FB071B174B9B002B9C12 /* Images.xcassets in Resources */,
 				BD254C291B550B45006032E1 /* data.json in Resources */,
+				BDD4C6AC1B6A21CE00887B38 /* test.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

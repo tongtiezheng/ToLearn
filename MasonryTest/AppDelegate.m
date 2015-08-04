@@ -24,6 +24,20 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
+//    NSArray *arr =@[];
+//    NSObject *obj=arr[1];
+    
+    dispatch_queue_t queue = dispatch_queue_create("serial", DISPATCH_QUEUE_SERIAL);
+    dispatch_sync(queue, ^{
+        NSLog(@"1");
+        NSLog(@"2");
+        NSLog(@"3");
+        NSLog(@"4");
+        NSLog(@"5");
+        NSLog(@"6");
+        NSLog(@"7");
+    });
+    
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
     NSString *documentsDirectory=[paths objectAtIndex:0];
     

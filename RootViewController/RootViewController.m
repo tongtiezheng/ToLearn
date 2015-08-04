@@ -14,6 +14,32 @@
 
 @implementation RootViewController
 
+- (id)init {
+    if (self = [super init]) {
+        [self initNotification];
+    }
+    return self;
+}
+
+- (void)initNotification {
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(keyboardShow)
+                                                 name:UIKeyboardWillChangeFrameNotification
+                                               object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(keyboardHide)
+                                                 name:UIKeyboardWillHideNotification
+                                               object:nil];
+}
+
+- (void)keyboardShow {
+    NSLog(@"showaaa");
+}
+
+- (void)keyboardHide {
+    NSLog(@"hideaaa");
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.navigationController.navigationBar.titleTextAttributes = [NSDictionary dictionaryWithObjectsAndKeys:RGBColor(219, 44, 56),NSForegroundColorAttributeName,[UIFont fontWithName:@"Helvetica-Bold" size:17.0],NSFontAttributeName, nil];

@@ -25,12 +25,14 @@ PODS:
   - CVKHierarchySearcher (0.2.0)
   - JSONKit-NoWarning (1.2)
   - Masonry (0.6.2)
+  - pop (1.0.7)
 
 DEPENDENCIES:
   - AFMInfoBanner
   - AFNetworking (~> 2.0)
   - JSONKit-NoWarning (~> 1.2)
   - Masonry
+  - pop (~> 1.0.7)
 
 SPEC CHECKSUMS:
   AFMInfoBanner: 207a0622fdfc6bff3e8d04ac557932f3d6849425
@@ -38,5 +40,6 @@ SPEC CHECKSUMS:
   CVKHierarchySearcher: 7be8d3bcbcc6f86ff07f785e6c632b5e40da2553
   JSONKit-NoWarning: 3d27e6f9e6846ecf741e8c64dcadd7d5aa7193cb
   Masonry: 362e8a1cc0beada4a4c4832d5e863da2a51533be
+  pop: 628ffc631644601567ee8bfaaaea493ebd7d0923
 
 COCOAPODS: 0.37.2

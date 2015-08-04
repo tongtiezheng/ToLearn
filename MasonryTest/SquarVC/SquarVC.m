@@ -13,6 +13,8 @@
 
 @interface SquarVC ()
 
+@property (nonatomic, strong) UIWebView *jsWebView;
+
 @end
 
 @implementation SquarVC
@@ -32,6 +34,27 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    
+//    NSURL *url =[[NSURL alloc] initWithString:@"http://10.10.80.125:58090/report/phonePortal/deviceAlarm.jsp"];
+    
+//    NSURLRequest *request =  [[NSURLRequest alloc] initWithURL:url];
+    _jsWebView = [[UIWebView alloc] initWithFrame:CGRectMake(0, 0, 320, 400)];
+    _jsWebView.backgroundColor = [UIColor clearColor];
+    [self.view addSubview:_jsWebView];
+    // js地址
+    NSString * jsPath = [[NSBundle mainBundle] pathForResource:@"test" ofType:@"html"];
+    
+    NSString * content = [NSString stringWithContentsOfFile:jsPath encoding:NSUTF8StringEncoding error:nil];
+    
+    NSString * jsNSString = content;
+    
+//    [_jsWebView stringByEvaluatingJavaScriptFromString:jsNSString];
+    [_jsWebView loadHTMLString:jsNSString baseURL:nil];
+    
+//    [_jsWebView loadRequest:request];
+    
+    
+    /*
     NSMutableArray *arr = [NSMutableArray array];
     for (NSInteger i=0; i<8; i++) {
         News *model = [[News alloc] init];
@@ -53,7 +76,7 @@
     
     
     
-    /*
+    
     WS(ws);
     
     UIButton *btn = [UIButton new];
