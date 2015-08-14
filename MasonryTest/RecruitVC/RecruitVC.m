@@ -8,6 +8,7 @@
 
 #import "RecruitVC.h"
 #import "ComplexCell.h"
+#import "POP.h"
 
 @interface RecruitVC () <
     UITableViewDelegate,
@@ -41,7 +42,25 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    UILabel *l = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 100, 100)];
+    l.backgroundColor = RED_COLOR;
+    [self.view addSubview:l];
     
+//    POPBasicAnimation *anim = [POPBasicAnimation animationWithPropertyNamed:kPOPViewAlpha];
+//    anim.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
+//    anim.fromValue = @(0.0);
+//    anim.toValue = @(1.0);
+//    [l pop_addAnimation:anim forKey:@"fade"];
+    
+//    POPDecayAnimation *anim = [POPDecayAnimation animationWithPropertyNamed: kPOPLayerPositionX];
+//    anim.velocity = @(50);
+//    [l.layer pop_addAnimation:anim forKey:@"slide"];
+    
+//    POPSpringAnimation *anim = [POPSpringAnimation animationWithPropertyNamed:kPOPLayerBounds];
+//    anim.toValue = [NSValue valueWithCGRect:CGRectMake(0, 0, 400, 400)];
+//    [l.layer pop_addAnimation:anim forKey:@"size"];
+    
+    /*
     WS(ws);
     
     UITableView *listView = [UITableView new];
@@ -70,6 +89,7 @@
         make.bottom.equalTo(ws.view).with.offset(-49);
         make.top.equalTo(listView.mas_bottom);
     }];
+     */
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {

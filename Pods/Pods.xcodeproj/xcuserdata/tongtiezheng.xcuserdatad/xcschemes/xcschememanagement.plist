@@ -19,12 +19,27 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-DGActivityIndicatorView.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-JSONKit-NoWarning.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
 		<key>Pods-Masonry.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-TBIconTransitionKit-TBIconTransitionKit.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-TBIconTransitionKit.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -42,37 +57,52 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>0A2D5350D94A2DED09804465</key>
+		<key>099477B0EBC196E798C542F4</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>18EDA579435F77647137F243</key>
+		<key>15065BF58C22B448AF9EDCEB</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>201F69F543EA44949E4A3503</key>
+		<key>17B4AFB90D1EBCA8E441A170</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>307493E045C085E5DF849C75</key>
+		<key>1E5EB31F804FD3810154A666</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>3FF992C7D9019802A9CB5B84</key>
+		<key>63E28C52F185A585021C5341</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A880D472403FDF51921AD7DC</key>
+		<key>7FF350499203B28F7FDAF95B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A884E1D36975844F68F8598B</key>
+		<key>A59733ED8ABFECB506AC19DD</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>AB9344F4B8807F922154006B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B205014FC1042D0C43F4572F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CAA25217407CABEBB58CA7FA</key>
 		<dict>
 			<key>primary</key>
 			<true/>

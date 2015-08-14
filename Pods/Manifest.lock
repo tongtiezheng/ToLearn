@@ -23,23 +23,29 @@ PODS:
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
   - CVKHierarchySearcher (0.2.0)
+  - DGActivityIndicatorView (1.0)
   - JSONKit-NoWarning (1.2)
   - Masonry (0.6.2)
   - pop (1.0.7)
+  - TBIconTransitionKit (1.0.1)
 
 DEPENDENCIES:
   - AFMInfoBanner
   - AFNetworking (~> 2.0)
+  - DGActivityIndicatorView
   - JSONKit-NoWarning (~> 1.2)
   - Masonry
   - pop (~> 1.0.7)
+  - TBIconTransitionKit (~> 1.0.1)
 
 SPEC CHECKSUMS:
   AFMInfoBanner: 207a0622fdfc6bff3e8d04ac557932f3d6849425
   AFNetworking: 05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e
   CVKHierarchySearcher: 7be8d3bcbcc6f86ff07f785e6c632b5e40da2553
+  DGActivityIndicatorView: 980091f8d8cc647a1af7804660272e64aef9e516
   JSONKit-NoWarning: 3d27e6f9e6846ecf741e8c64dcadd7d5aa7193cb
   Masonry: 362e8a1cc0beada4a4c4832d5e863da2a51533be
   pop: 628ffc631644601567ee8bfaaaea493ebd7d0923
+  TBIconTransitionKit: ef4316545073afc98a1d8a6a31f8f521a2578d6a
 
 COCOAPODS: 0.37.2

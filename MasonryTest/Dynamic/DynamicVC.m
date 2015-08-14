@@ -72,7 +72,8 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    
+    DynamicDetailVC *vc = [[DynamicDetailVC alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 - (void)viewDidLoad {

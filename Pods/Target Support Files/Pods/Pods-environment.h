@@ -60,6 +60,12 @@
 #define COCOAPODS_VERSION_MINOR_CVKHierarchySearcher 2
 #define COCOAPODS_VERSION_PATCH_CVKHierarchySearcher 0
 
+// DGActivityIndicatorView
+#define COCOAPODS_POD_AVAILABLE_DGActivityIndicatorView
+#define COCOAPODS_VERSION_MAJOR_DGActivityIndicatorView 1
+#define COCOAPODS_VERSION_MINOR_DGActivityIndicatorView 0
+#define COCOAPODS_VERSION_PATCH_DGActivityIndicatorView 0
+
 // JSONKit-NoWarning
 #define COCOAPODS_POD_AVAILABLE_JSONKit_NoWarning
 #define COCOAPODS_VERSION_MAJOR_JSONKit_NoWarning 1
@@ -71,6 +77,12 @@
 #define COCOAPODS_VERSION_MAJOR_Masonry 0
 #define COCOAPODS_VERSION_MINOR_Masonry 6
 #define COCOAPODS_VERSION_PATCH_Masonry 2
+
+// TBIconTransitionKit
+#define COCOAPODS_POD_AVAILABLE_TBIconTransitionKit
+#define COCOAPODS_VERSION_MAJOR_TBIconTransitionKit 1
+#define COCOAPODS_VERSION_MINOR_TBIconTransitionKit 0
+#define COCOAPODS_VERSION_PATCH_TBIconTransitionKit 1
 
 // pop
 #define COCOAPODS_POD_AVAILABLE_pop

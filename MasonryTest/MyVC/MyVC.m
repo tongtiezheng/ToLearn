@@ -32,9 +32,34 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+//    dispatch_async(dispatch_get_global_queue(0, 0), ^{
+//        
+//    });
+    
+    
+    dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+    dispatch_group_t group = dispatch_group_create();
+    dispatch_group_async(group, queue, ^{
+        [NSThread sleepForTimeInterval:1];
+        NSLog(@"group1");
+    });
+    dispatch_group_async(group, queue, ^{
+        [NSThread sleepForTimeInterval:2];
+        NSLog(@"group2");
+    });
+    dispatch_group_async(group, queue, ^{
+        [NSThread sleepForTimeInterval:3];
+        NSLog(@"group3");
+    });
+    dispatch_group_notify(group, dispatch_get_main_queue(), ^{
+        NSLog(@"updateUi");
+    });  
+
+    
+    /*
     TZDisplayView *view = [[TZDisplayView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 200)];
     [self.view addSubview: view];
-    
+    */
 }
 
 - (void)didReceiveMemoryWarning {

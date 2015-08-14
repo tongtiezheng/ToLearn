@@ -189,6 +189,18 @@
 			name = View;
 			sourceTree = "<group>";
 		};
+		BD975F9A1B7D951900CAAB44 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				BDBB71971B19EE3400B88225 /* Dynamic */,
+				BDBB71961B19EE2D00B88225 /* Chat */,
+				BDBB71951B19EE1300B88225 /* Recruit */,
+				BDBB71941B19EDEF00B88225 /* Squar */,
+				BDBB71931B19EDD200B88225 /* My */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
 		BDBB71931B19EDD200B88225 /* My */ = {
 			isa = PBXGroup;
 			children = (
@@ -197,6 +209,7 @@
 				BDBB71AB1B19EF7D00B88225 /* MyVC.m */,
 			);
 			name = My;
+			path = MasonryTest;
 			sourceTree = "<group>";
 		};
 		BDBB71941B19EDEF00B88225 /* Squar */ = {
@@ -209,6 +222,7 @@
 				BDBB71A81B19EF5900B88225 /* SquarVC.m */,
 			);
 			name = Squar;
+			path = MasonryTest;
 			sourceTree = "<group>";
 		};
 		BDBB71951B19EE1300B88225 /* Recruit */ = {
@@ -219,6 +233,7 @@
 				BDBB71A51B19EF3100B88225 /* RecruitVC.m */,
 			);
 			name = Recruit;
+			path = MasonryTest;
 			sourceTree = "<group>";
 		};
 		BDBB71961B19EE2D00B88225 /* Chat */ = {
@@ -229,6 +244,7 @@
 				BDBB71A21B19EF0300B88225 /* ChatVC.m */,
 			);
 			name = Chat;
+			path = MasonryTest;
 			sourceTree = "<group>";
 		};
 		BDBB71971B19EE3400B88225 /* Dynamic */ = {
@@ -241,6 +257,7 @@
 				BD1E96261B1A04B700AAD778 /* DynamicDetailVC.m */,
 			);
 			name = Dynamic;
+			path = MasonryTest;
 			sourceTree = "<group>";
 		};
 		BDBB719C1B19EE8900B88225 /* RootViewController */ = {
@@ -271,13 +288,10 @@
 		BDD1FAED1B174B9B002B9C12 = {
 			isa = PBXGroup;
 			children = (
+				BDD1FAF81B174B9B002B9C12 /* MasonryTest */,
+				BD975F9A1B7D951900CAAB44 /* ViewController */,
 				BDBB71AD1B19F09A00B88225 /* Util */,
 				BDBB719C1B19EE8900B88225 /* RootViewController */,
-				BDD1FB461B174F17002B9C12 /* CoreGraphics.framework */,
-				BDD1FB441B174F10002B9C12 /* Foundation.framework */,
-				BDD1FB421B174F09002B9C12 /* QuartzCore.framework */,
-				BDD1FB401B174F03002B9C12 /* UIKit.framework */,
-				BDD1FAF81B174B9B002B9C12 /* MasonryTest */,
 				BDD1FB121B174B9B002B9C12 /* MasonryTestTests */,
 				BDD1FAF71B174B9B002B9C12 /* Products */,
 				9E493A3A97B6094E9D3C1694 /* Pods */,
@@ -297,11 +311,6 @@
 		BDD1FAF81B174B9B002B9C12 /* MasonryTest */ = {
 			isa = PBXGroup;
 			children = (
-				BDBB71971B19EE3400B88225 /* Dynamic */,
-				BDBB71961B19EE2D00B88225 /* Chat */,
-				BDBB71951B19EE1300B88225 /* Recruit */,
-				BDBB71941B19EDEF00B88225 /* Squar */,
-				BDBB71931B19EDD200B88225 /* My */,
 				BDD1FAFD1B174B9B002B9C12 /* AppDelegate.h */,
 				BDD1FAFE1B174B9B002B9C12 /* AppDelegate.m */,
 				BDD1FB001B174B9B002B9C12 /* ViewController.h */,
@@ -351,6 +360,10 @@
 		ED4931B28A8D4A78238085F2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BDD1FB461B174F17002B9C12 /* CoreGraphics.framework */,
+				BDD1FB441B174F10002B9C12 /* Foundation.framework */,
+				BDD1FB421B174F09002B9C12 /* QuartzCore.framework */,
+				BDD1FB401B174F03002B9C12 /* UIKit.framework */,
 				A33169A2F3BB022393DA2B71 /* libPods.a */,
 			);
 			name = Frameworks;
