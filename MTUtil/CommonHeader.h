@@ -13,5 +13,6 @@
 #define iOS7  ([[[UIDevice currentDevice] systemVersion] floatValue] >= 7.0)
 #define WS(weakSelf)  __weak __typeof(&*self)weakSelf = self;
 #define RED_COLOR [UIColor redColor]
+#define CLEAR_COLOR [UIColor clearColor]
 
 #endif

@@ -15,4 +15,12 @@
 
 - (UITabBarItem *)returnTabBarItem:(NSString *)title andImageName:(NSString *)name;
 
+- (UIBarButtonItem *)TBButtonItemWithaction:(SEL)action
+                                   andTitle:(NSString*)title
+                              andNavigation:(UIViewController *)nav;
+
+- (void)buttonItemWithaction:(SEL)action
+                    andTitle:(NSString*)title
+               andNavigation:(UIViewController *)nav;
+
 @end

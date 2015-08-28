@@ -7,6 +7,7 @@
 //
 
 #import "MTUtil.h"
+#import "TBAnimationButton.h"
 
 static MTUtil *mt = nil;
 
@@ -24,6 +25,48 @@ static MTUtil *mt = nil;
         
     }
     return self;
+}
+
+- (void)buttonItemWithaction:(SEL)action
+                    andTitle:(NSString*)title
+               andNavigation:(UIViewController *)nav {
+    TBAnimationButton *button = [TBAnimationButton buttonWithType:UIButtonTypeCustom];
+    button.backgroundColor = RED_COLOR;
+    button.currentState = TBAnimationButtonStateMenu;
+    button.lineWidth = 25;
+    button.showsTouchWhenHighlighted = YES;
+    //    button.titleEdgeInsets = UIEdgeInsetsMake(0, 0, 0, 50);
+    button.frame = CGRectMake(0, 0, 44, 44);
+    //    button.bounds = CGRectMake(10, 0, 44, 44);
+    if (title && title.length != 0) {
+        [button setTitle:title forState:UIControlStateNormal];
+        button.titleLabel.font = [UIFont systemFontOfSize:14.0];
+    }
+    
+    [button addTarget:nav action:action forControlEvents:UIControlEventTouchUpInside];
+    [nav.navigationController.navigationBar addSubview:button];
+}
+
+- (UIBarButtonItem *)TBButtonItemWithaction:(SEL)action
+                                       andTitle:(NSString*)title
+                                  andNavigation:(UIViewController *)nav {
+    TBAnimationButton *button = [TBAnimationButton buttonWithType:UIButtonTypeCustom];
+    button.backgroundColor = CLEAR_COLOR;
+    button.currentState = TBAnimationButtonStateMenu;
+    button.lineWidth = 22.5;
+    button.lineSpacing = 6;
+//    button.titleEdgeInsets = UIEdgeInsetsMake(0, 0, 0, 50);
+//    button.frame = CGRectMake(0, 0, 44, 44);
+    button.bounds = CGRectMake(10, 0, 44, 44);
+    if (title && title.length != 0) {
+        [button setTitle:title forState:UIControlStateNormal];
+        button.titleLabel.font = [UIFont systemFontOfSize:14.0];
+    }
+    
+    [button addTarget:nav action:action forControlEvents:UIControlEventTouchUpInside];
+    
+    __autoreleasing UIBarButtonItem *barButtonItem = [[UIBarButtonItem alloc] initWithCustomView:button];
+    return barButtonItem;
 }
 
 - (UITabBarItem *)returnTabBarItem:(NSString *)title andImageName:(NSString *)name{

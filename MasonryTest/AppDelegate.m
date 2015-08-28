@@ -23,10 +23,7 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    
-//    NSArray *arr =@[];
-//    NSObject *obj=arr[1];
-    
+    /*
     dispatch_queue_t queue = dispatch_queue_create("serial", DISPATCH_QUEUE_SERIAL);
     dispatch_sync(queue, ^{
         NSLog(@"1");
@@ -36,7 +33,7 @@
         NSLog(@"5");
         NSLog(@"6");
         NSLog(@"7");
-    });
+    });*/
     
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
     NSString *documentsDirectory=[paths objectAtIndex:0];
@@ -48,38 +45,28 @@
     
     RootTabBarController *tab = [[RootTabBarController alloc] init];
     
-    
-//    RootNavigationViewController *nav = [[RootNavigationViewController alloc] initWithRootViewController:tab];
-    
     DynamicVC *dynamic = [[DynamicVC alloc] init];
-//    dynamic.tabBarItem = [[MTUtil shareInstance] returnTabBarItem:@"动态" andImageName:nil];
     RootNavigationViewController *nav1 = [[RootNavigationViewController alloc] initWithRootViewController:dynamic];
     nav1.tabBarItem = [[MTUtil shareInstance] returnTabBarItem:@"动态" andImageName:nil];
     
     ChatVC *chat = [[ChatVC alloc] init];
-//    chat.tabBarItem = [[MTUtil shareInstance] returnTabBarItem:@"聊天" andImageName:nil];
     RootNavigationViewController *nav2 = [[RootNavigationViewController alloc] initWithRootViewController:chat];
     nav2.tabBarItem = [[MTUtil shareInstance] returnTabBarItem:@"聊天" andImageName:nil];
     
     RecruitVC *recruit = [[RecruitVC alloc] init];
-//    recruit.tabBarItem = [[MTUtil shareInstance] returnTabBarItem:@"招聘" andImageName:nil];
     RootNavigationViewController *nav3 = [[RootNavigationViewController alloc] initWithRootViewController:recruit];
     nav3.tabBarItem = [[MTUtil shareInstance] returnTabBarItem:@"招聘" andImageName:nil];
     
     SquarVC *squar = [[SquarVC alloc] init];
-//    squar.tabBarItem = [[MTUtil shareInstance] returnTabBarItem:@"广场" andImageName:nil];
     RootNavigationViewController *nav4 = [[RootNavigationViewController alloc] initWithRootViewController:squar];
     nav4.tabBarItem = [[MTUtil shareInstance] returnTabBarItem:@"广场" andImageName:nil];
     
     MyVC *my = [[MyVC alloc] init];
-//    my.tabBarItem = [[MTUtil shareInstance] returnTabBarItem:@"我的" andImageName:nil];
     RootNavigationViewController *nav5 = [[RootNavigationViewController alloc] initWithRootViewController:my];
     nav5.tabBarItem = [[MTUtil shareInstance] returnTabBarItem:@"我的" andImageName:nil];
     
     tab.viewControllers = @[nav1,nav2,nav3,nav4,nav5];
     self.window.rootViewController = tab;
-//    tab.viewControllers = @[dynamic,chat,recruit,squar,my];
-//    self.window.rootViewController = nav;
     
     [self.window makeKeyAndVisible];
     return YES;

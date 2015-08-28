@@ -1,32 +1,38 @@
 PODS:
   - AFMInfoBanner (1.1):
     - CVKHierarchySearcher (~> 0.2)
-  - AFNetworking (2.5.4):
-    - AFNetworking/NSURLConnection (= 2.5.4)
-    - AFNetworking/NSURLSession (= 2.5.4)
-    - AFNetworking/Reachability (= 2.5.4)
-    - AFNetworking/Security (= 2.5.4)
-    - AFNetworking/Serialization (= 2.5.4)
-    - AFNetworking/UIKit (= 2.5.4)
-  - AFNetworking/NSURLConnection (2.5.4):
+  - AFNetworking (2.6.0):
+    - AFNetworking/NSURLConnection (= 2.6.0)
+    - AFNetworking/NSURLSession (= 2.6.0)
+    - AFNetworking/Reachability (= 2.6.0)
+    - AFNetworking/Security (= 2.6.0)
+    - AFNetworking/Serialization (= 2.6.0)
+    - AFNetworking/UIKit (= 2.6.0)
+  - AFNetworking/NSURLConnection (2.6.0):
     - AFNetworking/Reachability
     - AFNetworking/Security
     - AFNetworking/Serialization
-  - AFNetworking/NSURLSession (2.5.4):
+  - AFNetworking/NSURLSession (2.6.0):
     - AFNetworking/Reachability
     - AFNetworking/Security
     - AFNetworking/Serialization
-  - AFNetworking/Reachability (2.5.4)
-  - AFNetworking/Security (2.5.4)
-  - AFNetworking/Serialization (2.5.4)
-  - AFNetworking/UIKit (2.5.4):
+  - AFNetworking/Reachability (2.6.0)
+  - AFNetworking/Security (2.6.0)
+  - AFNetworking/Serialization (2.6.0)
+  - AFNetworking/UIKit (2.6.0):
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
   - CVKHierarchySearcher (0.2.0)
   - DGActivityIndicatorView (1.0)
   - JSONKit-NoWarning (1.2)
+  - KVOController (1.0.3)
   - Masonry (0.6.2)
   - pop (1.0.7)
+  - SQLCipher (3.1.0):
+    - SQLCipher/standard (= 3.1.0)
+  - SQLCipher/common (3.1.0)
+  - SQLCipher/standard (3.1.0):
+    - SQLCipher/common
   - TBIconTransitionKit (1.0.1)
 
 DEPENDENCIES:
@@ -34,18 +40,22 @@ DEPENDENCIES:
   - AFNetworking (~> 2.0)
   - DGActivityIndicatorView
   - JSONKit-NoWarning (~> 1.2)
+  - KVOController
   - Masonry
   - pop (~> 1.0.7)
+  - SQLCipher (~> 3.1.0)
   - TBIconTransitionKit (~> 1.0.1)
 
 SPEC CHECKSUMS:
   AFMInfoBanner: 207a0622fdfc6bff3e8d04ac557932f3d6849425
-  AFNetworking: 05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e
+  AFNetworking: 79f7eb1a0fcfa7beb409332b2ca49afe9ce53b05
   CVKHierarchySearcher: 7be8d3bcbcc6f86ff07f785e6c632b5e40da2553
   DGActivityIndicatorView: 980091f8d8cc647a1af7804660272e64aef9e516
   JSONKit-NoWarning: 3d27e6f9e6846ecf741e8c64dcadd7d5aa7193cb
+  KVOController: 9fd8f0343670994e4b6f9f0b31f5a45663f3e1cf
   Masonry: 362e8a1cc0beada4a4c4832d5e863da2a51533be
   pop: 628ffc631644601567ee8bfaaaea493ebd7d0923
+  SQLCipher: c44fcca49c31483c2489cfb79aa7a69407f3794a
   TBIconTransitionKit: ef4316545073afc98a1d8a6a31f8f521a2578d6a
 
-COCOAPODS: 0.37.2
+COCOAPODS: 0.38.2

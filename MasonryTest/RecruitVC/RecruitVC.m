@@ -9,11 +9,14 @@
 #import "RecruitVC.h"
 #import "ComplexCell.h"
 #import "POP.h"
+#import "TBAnimationButton.h"
 
 @interface RecruitVC () <
     UITableViewDelegate,
     UITableViewDataSource
 >
+
+@property (nonatomic, strong) UILabel *testView;
 
 @end
 
@@ -39,12 +42,43 @@
     NSLog(@"hideaaa");
 }
 
+- (void)btnClick:(TBAnimationButton *)sender {
+    if (sender.currentState == TBAnimationButtonStateMenu) {
+        [sender animationTransformToState:TBAnimationButtonStateCross];
+        
+        NSInteger height = CGRectGetHeight(self.view.bounds);
+        NSInteger width = CGRectGetWidth(self.view.bounds);
+        
+//        CGFloat centerX = arc4random() % width;
+//        CGFloat centerY = arc4random() % height;
+        CGFloat centerX = width / 2;
+        CGFloat centerY = height / 2;
+        
+        NSLog(@"height=%ld",height);
+        NSLog(@"width=%ld",width);
+        NSLog(@"centerX=%f",centerX);
+        NSLog(@"centerY=%f",centerY);
+        
+        POPBasicAnimation *anim = [POPBasicAnimation animationWithPropertyNamed:kPOPViewCenter];
+        anim.toValue = [NSValue valueWithCGPoint:CGPointMake(centerX, centerY)];
+        anim.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
+        anim.duration = 1;
+        [self.testView pop_addAnimation:anim forKey:@"centerAnimation"];
+        
+    } else if (sender.currentState == TBAnimationButtonStateCross) {
+        [sender animationTransformToState:TBAnimationButtonStateMenu];
+    }
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    UILabel *l = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 100, 100)];
+    self.navigationItem.leftBarButtonItem = [[MTUtil shareInstance] TBButtonItemWithaction:@selector(btnClick:) andTitle:nil andNavigation:self];
+    
+    UILabel *l = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 10, 10)];
     l.backgroundColor = RED_COLOR;
     [self.view addSubview:l];
+    self.testView = l;
     
 //    POPBasicAnimation *anim = [POPBasicAnimation animationWithPropertyNamed:kPOPViewAlpha];
 //    anim.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];

@@ -10,6 +10,8 @@
 #import "DynamicDetailVC.h"
 #import "JSONKit.h"
 #import "DynamicCell.h"
+#import "TBAnimationButton.h"
+#import "FBKVOController.h"
 
 @interface DynamicVC () <
     UITableViewDelegate,
@@ -73,13 +75,30 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     DynamicDetailVC *vc = [[DynamicDetailVC alloc] init];
+    vc.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:vc animated:YES];
+}
+
+- (void)btnClick:(TBAnimationButton *)sender {
+    if (sender.currentState == TBAnimationButtonStateMenu) {
+        [sender animationTransformToState:TBAnimationButtonStateCross];
+    } else if (sender.currentState == TBAnimationButtonStateCross) {
+        [sender animationTransformToState:TBAnimationButtonStateMenu];
+    }
+    
+}
+
+- (void)aa {
+    
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor clearColor];
-
+    self.view.backgroundColor = CLEAR_COLOR;
+    
+    self.navigationItem.leftBarButtonItem = [[MTUtil shareInstance] TBButtonItemWithaction:@selector(btnClick:) andTitle:nil andNavigation:self];
+//    [[MTUtil shareInstance] buttonItemWithaction:@selector(btnClick:) andTitle:nil andNavigation:self];
+    
     WS(ws);
     
     UITableView *listView = [UITableView new];

@@ -84,7 +84,7 @@
 		BDBB71AB1B19EF7D00B88225 /* MyVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyVC.m; path = MyVC/MyVC.m; sourceTree = "<group>"; };
 		BDBB71AE1B19F0C400B88225 /* MTUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MTUtil.h; path = MTUtil/MTUtil.h; sourceTree = "<group>"; };
 		BDBB71AF1B19F0C400B88225 /* MTUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MTUtil.m; path = MTUtil/MTUtil.m; sourceTree = "<group>"; };
-		BDBB71B11B19F19A00B88225 /* CommonHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CommonHeader.h; path = MTUtil/CommonHeader.h; sourceTree = "<group>"; };
+		BDBB71B11B19F19A00B88225 /* CommonHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CommonHeader.h; path = ../MTUtil/CommonHeader.h; sourceTree = "<group>"; };
 		BDBB71B21B19F1D800B88225 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		BDD1FAF61B174B9B002B9C12 /* MasonryTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MasonryTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDD1FAFA1B174B9B002B9C12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -280,7 +280,6 @@
 			children = (
 				BDBB71AE1B19F0C400B88225 /* MTUtil.h */,
 				BDBB71AF1B19F0C400B88225 /* MTUtil.m */,
-				BDBB71B11B19F19A00B88225 /* CommonHeader.h */,
 			);
 			name = Util;
 			sourceTree = "<group>";
@@ -324,6 +323,7 @@
 		BDD1FAF91B174B9B002B9C12 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				BDBB71B11B19F19A00B88225 /* CommonHeader.h */,
 				BDD1FAFA1B174B9B002B9C12 /* Info.plist */,
 				BDD1FAFB1B174B9B002B9C12 /* main.m */,
 				BDBB71B21B19F1D800B88225 /* PrefixHeader.pch */,
