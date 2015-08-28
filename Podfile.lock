@@ -34,6 +34,7 @@ PODS:
   - SQLCipher/standard (3.1.0):
     - SQLCipher/common
   - TBIconTransitionKit (1.0.1)
+  - THPinViewController (1.2.4)
 
 DEPENDENCIES:
   - AFMInfoBanner
@@ -45,6 +46,7 @@ DEPENDENCIES:
   - pop (~> 1.0.7)
   - SQLCipher (~> 3.1.0)
   - TBIconTransitionKit (~> 1.0.1)
+  - THPinViewController
 
 SPEC CHECKSUMS:
   AFMInfoBanner: 207a0622fdfc6bff3e8d04ac557932f3d6849425
@@ -57,5 +59,6 @@ SPEC CHECKSUMS:
   pop: 628ffc631644601567ee8bfaaaea493ebd7d0923
   SQLCipher: c44fcca49c31483c2489cfb79aa7a69407f3794a
   TBIconTransitionKit: ef4316545073afc98a1d8a6a31f8f521a2578d6a
+  THPinViewController: 6ea25443b2205bdfaaf5a6db8b05403dfbe0bdec
 
 COCOAPODS: 0.38.2

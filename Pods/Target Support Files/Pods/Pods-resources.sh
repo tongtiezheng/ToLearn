@@ -58,9 +58,11 @@ install_resource()
   esac
 }
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_resource "THPinViewController/THPinViewController/THPinViewController.bundle"
   install_resource "${BUILT_PRODUCTS_DIR}/TBIconTransitionKit.bundle"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_resource "THPinViewController/THPinViewController/THPinViewController.bundle"
   install_resource "${BUILT_PRODUCTS_DIR}/TBIconTransitionKit.bundle"
 fi
 

@@ -8,10 +8,15 @@
 
 #import "MyVC.h"
 #import "TZDisplayView.h"
+#import "THPinViewController.h"
+#import "THPinView.h"
 
-@interface MyVC ()
+@interface MyVC () <
+    UITableViewDelegate,
+    UITableViewDataSource
+>
 
-
+@property (nonatomic, strong) UITableView *listView;
 
 @end
 
@@ -32,11 +37,18 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-//    dispatch_async(dispatch_get_global_queue(0, 0), ^{
-//        
-//    });
+    WS(ws);
     
+    UITableView *listView = [[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStyleGrouped];
+    listView.delegate = self;
+    listView.dataSource = self;
+    [self.view addSubview:listView];
+    self.listView = listView;
+    [listView mas_makeConstraints:^(MASConstraintMaker *make) {
+       make.edges.equalTo(ws.view).with.insets(UIEdgeInsetsMake(0, 0, 0, 0));
+    }];
     
+    /*
     dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
     dispatch_group_t group = dispatch_group_create();
     dispatch_group_async(group, queue, ^{
@@ -56,10 +68,81 @@
     });  
 
     
-    /*
+    
     TZDisplayView *view = [[TZDisplayView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 200)];
     [self.view addSubview: view];
     */
+}
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return 2;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    if (section == 0) {
+        return 2;
+    }
+    return 4;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    static NSString *cellID = @"cell";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellID];
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellID];
+    }
+    switch (indexPath.section) {
+        case 0: {
+            switch (indexPath.row) {
+                case 0: {
+                    cell.textLabel.text = @"1";
+                }
+                    break;
+                case 1: {
+                    cell.textLabel.text = @"1";
+                }
+                    break;
+                default:
+                    break;
+            }
+        }
+            break;
+        case 1: {
+            switch (indexPath.row) {
+                case 0: {
+                    cell.textLabel.text = @"1";
+                }
+                    break;
+                case 1: {
+                    cell.textLabel.text = @"1";
+                }
+                    break;
+                case 2: {
+                    cell.textLabel.text = @"1";
+                }
+                    break;
+                case 3: {
+                    cell.textLabel.text = @"密码";
+                }
+                    break;
+                default:
+                    break;
+            }
+        }
+        default:
+            break;
+    }
+    return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    if (indexPath.section == 1) {
+        if (indexPath.row == 3) {
+            THPinViewController *v = [[MTUtil shareInstance] pinViewController];
+            [v.pinView resetInput];
+            [self presentViewController:v animated:YES completion:nil];
+        }
+    }
 }
 
 - (void)didReceiveMemoryWarning {

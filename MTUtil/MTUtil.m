@@ -8,23 +8,49 @@
 
 #import "MTUtil.h"
 #import "TBAnimationButton.h"
+#import "THPinViewController.h"
 
 static MTUtil *mt = nil;
+
+@interface MTUtil () <
+    THPinViewControllerDelegate
+>
+
+
+@property (nonatomic, copy) NSString *correctPin;
+@property (nonatomic, assign) NSInteger remainingPinEntries;
+
+@end
 
 @implementation MTUtil
 
 + (MTUtil *)shareInstance {
     if (!mt) {
         mt = [[MTUtil alloc] init];
+        
     }
     return mt;
 }
 
 - (id)init {
     if (self = [super init]) {
-        
+        _correctPin = @"1234";
+        _remainingPinEntries = 3;
+//        [self initPinView];
     }
     return self;
+}
+
+- (void)initPinView {
+    if (!_pinViewController) {
+        _pinViewController = [[THPinViewController alloc] initWithDelegate:self];
+        _pinViewController.promptTitle = @"Enter PIN";
+        _pinViewController.promptColor = [UIColor darkTextColor];
+        _pinViewController.view.tintColor = [UIColor darkTextColor];
+        _pinViewController.hideLetters = YES;
+        _pinViewController.backgroundColor = [UIColor purpleColor];
+        _pinViewController.translucentBackground = YES;
+    }
 }
 
 - (void)buttonItemWithaction:(SEL)action
@@ -89,6 +115,40 @@ static MTUtil *mt = nil;
     __weak NSString *imagePath = [[NSBundle mainBundle] pathForResource:name ofType:@"png"];
     UIImage *returnImage = [UIImage imageWithContentsOfFile:imagePath];
     return returnImage;
+}
+
+- (THPinViewController *)pinViewController {
+    if (!_pinViewController) {
+        _pinViewController = [[THPinViewController alloc] initWithDelegate:self];
+        _pinViewController.promptTitle = @"Enter PIN";
+        _pinViewController.promptColor = [UIColor darkTextColor];
+        _pinViewController.view.tintColor = [UIColor darkTextColor];
+        _pinViewController.hideLetters = YES;
+//        _pinViewController.backgroundColor = RGBColor(68, 68, 68);
+        _pinViewController.backgroundColor = [UIColor whiteColor];
+//        _pinViewController.translucentBackground = YES;
+    }
+    return _pinViewController;
+}
+
+- (NSUInteger)pinLengthForPinViewController:(THPinViewController *)pinViewController
+{
+    return 4;
+}
+
+- (BOOL)pinViewController:(THPinViewController *)pinViewController isPinValid:(NSString *)pin
+{
+    if ([pin isEqualToString:self.correctPin]) {
+        return YES;
+    } else {
+        self.remainingPinEntries--;
+        return NO;
+    }
+}
+
+- (BOOL)userCanRetryInPinViewController:(THPinViewController *)pinViewController
+{
+    return (self.remainingPinEntries > 0);
 }
 
 @end

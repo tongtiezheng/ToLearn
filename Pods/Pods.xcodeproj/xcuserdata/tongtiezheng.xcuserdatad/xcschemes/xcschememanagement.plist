@@ -59,6 +59,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>THPinViewController.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>pop.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -72,12 +77,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>0B93C2B9D88EFA74E53D9B9EEA25DDF0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>0DBA9B5004825869003EF47A5C4ACB79</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>13CEF079AC56F2EC13A76B3AA9017B1D</key>
+		<key>1608AED2A7C0CE4E7C8525BF117E107F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>47BF23C672844BE7421ED54030FF7044</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -87,32 +102,27 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>4D45928C35E3351669BDAA3E1C5763BD</key>
+		<key>638AD6F6EE2F4DF2EBEA656E275CA3E2</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>79E2DFFD4A3A7234759F7AFA6162E5D4</key>
+		<key>6C10C6E9D178E88E795518A838085F07</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>81BDB49DC59C857A1871E03BBC22DC41</key>
+		<key>ACF295D14F2053414EEA680BA6E28880</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>84CA1008C7473F62D987EF3114B4D54B</key>
+		<key>B530ED959C0AA19F18C0E4101BB8AF49</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>B574CFC204D19A3107C19707C578E4FF</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>C5ABBAEC9B3519A16CE03C42F72585C2</key>
+		<key>C658BC6B7DDE496F060BBB41BAED473A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -122,7 +132,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>F9A53B2B6ACA39268EEBBCE447A9AF99</key>
+		<key>FC58C054BBDCFA31CC82F3991EE9B790</key>
 		<dict>
 			<key>primary</key>
 			<true/>

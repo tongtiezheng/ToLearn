@@ -34,7 +34,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    
+    /*
 //    NSURL *url =[[NSURL alloc] initWithString:@"http://10.10.80.125:58090/report/phonePortal/deviceAlarm.jsp"];
     
 //    NSURLRequest *request =  [[NSURLRequest alloc] initWithURL:url];
@@ -53,7 +53,7 @@
     
 //    [_jsWebView loadRequest:request];
     
-    
+    */
     /*
     NSMutableArray *arr = [NSMutableArray array];
     for (NSInteger i=0; i<8; i++) {

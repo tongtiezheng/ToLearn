@@ -8,10 +8,13 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+@class THPinViewController;
 
 @interface MTUtil : NSObject
 
 + (MTUtil *)shareInstance;
+
+@property (nonatomic, strong) THPinViewController *pinViewController;
 
 - (UITabBarItem *)returnTabBarItem:(NSString *)title andImageName:(NSString *)name;
 

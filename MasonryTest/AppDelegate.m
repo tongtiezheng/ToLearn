@@ -15,7 +15,10 @@
 #import "SquarVC.h"
 #import "MyVC.h"
 
+
 @interface AppDelegate ()
+
+
 
 @end
 
@@ -23,6 +26,7 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
     /*
     dispatch_queue_t queue = dispatch_queue_create("serial", DISPATCH_QUEUE_SERIAL);
     dispatch_sync(queue, ^{
@@ -92,6 +96,12 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+
+
+- (void)initPasswordView {
+    
 }
 
 @end
