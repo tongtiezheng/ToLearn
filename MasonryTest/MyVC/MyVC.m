@@ -10,6 +10,11 @@
 #import "TZDisplayView.h"
 #import "THPinViewController.h"
 #import "THPinView.h"
+#import "ReactiveCocoaVC.h"
+#import "XLForm.h"
+#import "XLVC.h"
+
+#define UIColorFromRGBA(rgbValue, alphaValue) [UIColor colorWithRed:(((float)(((rgbValue) & 0xFF0000) >> 16))/255.0) green:(((float)(((rgbValue) & 0x00FF00) >> 8))/255.0) blue:(((float)((rgbValue) & 0x0000FF))/255.0) alpha:(alphaValue)]
 
 @interface MyVC () <
     UITableViewDelegate,
@@ -95,7 +100,8 @@
         case 0: {
             switch (indexPath.row) {
                 case 0: {
-                    cell.textLabel.text = @"1";
+                    cell.textLabel.text = @"XLForm";
+//                    cell.contentView.backgroundColor = UIColorFromRGBA(0x3473a8, 1);
                 }
                     break;
                 case 1: {
@@ -110,7 +116,7 @@
         case 1: {
             switch (indexPath.row) {
                 case 0: {
-                    cell.textLabel.text = @"1";
+                    cell.textLabel.text = @"ReactiveCocoa";
                 }
                     break;
                 case 1: {
@@ -136,11 +142,22 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (indexPath.section == 1) {
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    if (indexPath.section == 0) {
+        if (indexPath.row == 0) {
+            XLVC *vc = [[XLVC alloc] init];
+            vc.hidesBottomBarWhenPushed = YES;
+            [self.navigationController pushViewController:vc animated:YES];
+        }
+    } else if (indexPath.section == 1) {
         if (indexPath.row == 3) {
             THPinViewController *v = [[MTUtil shareInstance] pinViewController];
             [v.pinView resetInput];
             [self presentViewController:v animated:YES completion:nil];
+        } else if (indexPath.row == 0) {
+            ReactiveCocoaVC *vc = [[ReactiveCocoaVC alloc] init];
+            vc.hidesBottomBarWhenPushed = YES;
+            [self.navigationController pushViewController:vc animated:YES];
         }
     }
 }

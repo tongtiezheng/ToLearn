@@ -12,6 +12,7 @@
 #import "DynamicCell.h"
 #import "TBAnimationButton.h"
 #import "FBKVOController.h"
+#import "MJRefresh.h"
 
 @interface DynamicVC () <
     UITableViewDelegate,
@@ -55,7 +56,7 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return self.dataArray.count;
+    return 10;//self.dataArray.count;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -89,7 +90,13 @@
 }
 
 - (void)aa {
-    
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        // 刷新表格
+        
+        
+        // 拿到当前的上拉刷新控件，结束刷新状态
+        [self.listView.footer endRefreshing];
+    });
 }
 
 - (void)viewDidLoad {
@@ -106,9 +113,18 @@
     listView.delegate = self;
     listView.dataSource = self;
     [self.view addSubview:listView];
+    self.listView = listView;
     [listView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.equalTo(ws.view).with.insets(UIEdgeInsetsMake(0, 0, 0, 0));
     }];
+    
+    MJRefreshAutoNormalFooter *footer = [MJRefreshAutoNormalFooter footerWithRefreshingTarget:self refreshingAction:@selector(aa)];
+    
+    // 禁止自动加载
+    footer.automaticallyRefresh = NO;
+    
+    // 设置footer
+    listView.footer = footer;
     
     
     NSString *dataFilePath = [[NSBundle mainBundle] pathForResource:@"data" ofType:@"json"];

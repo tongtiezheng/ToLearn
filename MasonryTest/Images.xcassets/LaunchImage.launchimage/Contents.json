@@ -30,9 +30,9 @@
     {
       "orientation" : "portrait",
       "idiom" : "iphone",
+      "filename" : "ios78Por@2x.png",
       "extent" : "full-screen",
       "minimum-system-version" : "7.0",
-      "filename" : "ios78Por@2x.png",
       "scale" : "2x"
     },
     {

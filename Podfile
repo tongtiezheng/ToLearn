@@ -1,5 +1,5 @@
 platform :ios, '7.0'
-pod "AFNetworking", "~> 2.0"
+pod 'AFNetworking', '~> 2.0'
 pod 'Masonry'
 pod 'AFMInfoBanner'
 pod 'JSONKit-NoWarning', '~> 1.2'
@@ -9,3 +9,6 @@ pod 'TBIconTransitionKit', '~> 1.0.1'
 pod 'SQLCipher', '~> 3.1.0'
 pod 'KVOController'
 pod 'THPinViewController'
+pod 'MJRefresh'
+pod 'XLForm', '~> 3.0.2'
+pod 'ReactiveCocoa', '~> 2.5'

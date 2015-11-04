@@ -33,15 +33,16 @@
 }
 
 - (void)keyboardShow {
-    NSLog(@"showaaa");
+//    NSLog(@"showaaa");
 }
 
 - (void)keyboardHide {
-    NSLog(@"hideaaa");
+//    NSLog(@"hideaaa");
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.view.backgroundColor = [UIColor whiteColor];
     self.navigationController.navigationBar.titleTextAttributes = [NSDictionary dictionaryWithObjectsAndKeys:RGBColor(219, 44, 56),NSForegroundColorAttributeName,[UIFont fontWithName:@"Helvetica-Bold" size:17.0],NSFontAttributeName, nil];
 //    [self.tabBarController.navigationController.navigationBar setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:
 //                                                [UIColor lightGrayColor], NSForegroundColorAttributeName,

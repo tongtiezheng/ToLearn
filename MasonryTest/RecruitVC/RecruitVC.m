@@ -35,11 +35,11 @@
 }
 
 - (void)keyboardShow {
-    NSLog(@"showaaa");
+//    NSLog(@"showaaa");
 }
 
 - (void)keyboardHide {
-    NSLog(@"hideaaa");
+//    NSLog(@"hideaaa");
 }
 
 - (void)btnClick:(TBAnimationButton *)sender {
