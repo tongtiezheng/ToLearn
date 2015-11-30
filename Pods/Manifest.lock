@@ -1,25 +1,25 @@
 PODS:
   - AFMInfoBanner (1.1):
     - CVKHierarchySearcher (~> 0.2)
-  - AFNetworking (2.6.1):
-    - AFNetworking/NSURLConnection (= 2.6.1)
-    - AFNetworking/NSURLSession (= 2.6.1)
-    - AFNetworking/Reachability (= 2.6.1)
-    - AFNetworking/Security (= 2.6.1)
-    - AFNetworking/Serialization (= 2.6.1)
-    - AFNetworking/UIKit (= 2.6.1)
-  - AFNetworking/NSURLConnection (2.6.1):
+  - AFNetworking (2.6.3):
+    - AFNetworking/NSURLConnection (= 2.6.3)
+    - AFNetworking/NSURLSession (= 2.6.3)
+    - AFNetworking/Reachability (= 2.6.3)
+    - AFNetworking/Security (= 2.6.3)
+    - AFNetworking/Serialization (= 2.6.3)
+    - AFNetworking/UIKit (= 2.6.3)
+  - AFNetworking/NSURLConnection (2.6.3):
     - AFNetworking/Reachability
     - AFNetworking/Security
     - AFNetworking/Serialization
-  - AFNetworking/NSURLSession (2.6.1):
+  - AFNetworking/NSURLSession (2.6.3):
     - AFNetworking/Reachability
     - AFNetworking/Security
     - AFNetworking/Serialization
-  - AFNetworking/Reachability (2.6.1)
-  - AFNetworking/Security (2.6.1)
-  - AFNetworking/Serialization (2.6.1)
-  - AFNetworking/UIKit (2.6.1):
+  - AFNetworking/Reachability (2.6.3)
+  - AFNetworking/Security (2.6.3)
+  - AFNetworking/Serialization (2.6.3)
+  - AFNetworking/UIKit (2.6.3):
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
   - CVKHierarchySearcher (0.2.0)
@@ -27,7 +27,7 @@ PODS:
   - JSONKit-NoWarning (1.2)
   - KVOController (1.0.3)
   - Masonry (0.6.3)
-  - MJRefresh (2.4.12)
+  - MJRefresh (3.0.7)
   - pop (1.0.8)
   - ReactiveCocoa (2.5):
     - ReactiveCocoa/UI (= 2.5)
@@ -43,7 +43,9 @@ PODS:
     - SQLCipher/common
   - TBIconTransitionKit (1.0.1)
   - THPinViewController (1.2.4)
+  - UIColor-Utilities (1.0.1)
   - XLForm (3.0.2)
+  - YYText (0.9.11)
 
 DEPENDENCIES:
   - AFMInfoBanner
@@ -58,22 +60,26 @@ DEPENDENCIES:
   - SQLCipher (~> 3.1.0)
   - TBIconTransitionKit (~> 1.0.1)
   - THPinViewController
+  - UIColor-Utilities (~> 1.0.1)
   - XLForm (~> 3.0.2)
+  - YYText
 
 SPEC CHECKSUMS:
   AFMInfoBanner: 207a0622fdfc6bff3e8d04ac557932f3d6849425
-  AFNetworking: 8e4e60500beb8bec644cf575beee72990a76d399
+  AFNetworking: cb8d14a848e831097108418f5d49217339d4eb60
   CVKHierarchySearcher: 7be8d3bcbcc6f86ff07f785e6c632b5e40da2553
   DGActivityIndicatorView: 52875b025a6ccf6a431a905285c12e2bb95eb559
   JSONKit-NoWarning: 3d27e6f9e6846ecf741e8c64dcadd7d5aa7193cb
   KVOController: 9fd8f0343670994e4b6f9f0b31f5a45663f3e1cf
   Masonry: ff105a956abcd19a618b2028b121cb638d7a8e2f
-  MJRefresh: ca8e9589895977df32d379d46e6b8a5450b3ff44
+  MJRefresh: f3e1228ec3d38c7ba5208d58032631a52f39f495
   pop: bb773ae2c791ca2629de13b347e7a8b450fa6a57
   ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
   SQLCipher: c44fcca49c31483c2489cfb79aa7a69407f3794a
   TBIconTransitionKit: ef4316545073afc98a1d8a6a31f8f521a2578d6a
   THPinViewController: 6ea25443b2205bdfaaf5a6db8b05403dfbe0bdec
+  UIColor-Utilities: 6746a54dcdb3bc012dd7aeaeea5588ae2100beb2
   XLForm: 7817ce29f3f259186e837bb7309ac7e5b7e9b883
+  YYText: 11d30e835ed4cfcc0f0ed27a44b4b604d879d5fe
 
 COCOAPODS: 0.39.0

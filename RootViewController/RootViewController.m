@@ -40,6 +40,19 @@
 //    NSLog(@"hideaaa");
 }
 
+//-(NSUInteger)supportedInterfaceOrientations
+//{
+//    return self.supportedInterfaceOrientations; ;
+//}
+//- (BOOL)shouldAutorotate
+//{
+//    return self.shouldAutorotate;
+//}
+//-(UIInterfaceOrientation)preferredInterfaceOrientationForPresentation
+//{
+//    return UIInterfaceOrientationLandscapeRight;
+//}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];

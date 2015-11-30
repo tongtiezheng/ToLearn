@@ -19,6 +19,19 @@
     
 }
 
+//-(BOOL)shouldAutorotate
+//{
+//    return NO;
+//}
+//-(NSUInteger)supportedInterfaceOrientations
+//{
+//    return [self.viewControllers.lastObject supportedInterfaceOrientations];
+//}
+//-(UIInterfaceOrientation)preferredInterfaceOrientationForPresentation
+//{
+//    return [self.viewControllers.lastObject preferredInterfaceOrientationForPresentation];
+//}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
 }

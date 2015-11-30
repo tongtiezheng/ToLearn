@@ -95,10 +95,41 @@ static void *ObservationContext = &ObservationContext;
     return password.length > 3;
 }
 
+- (void)willRotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration {
+    
+}
+
+
+
+//- (void)viewWillAppear:(BOOL)animated {
+//    [super viewWillAppear:animated];
+//    NSLog(@"%@",string_weak);
+//}
+//
+//- (void)viewDidAppear:(BOOL)animated {
+//    [super viewDidAppear:animated];
+//    NSLog(@"%@",string_weak);
+//}
+//__weak NSString * string_weak = nil;
 - (void)viewDidLoad {
     [super viewDidLoad];
+//    NSString *string = [NSString stringWithFormat:@"123%@",@"1"];
+//    string_weak = string;
+    
+//    @autoreleasepool {
+//        NSString *string = [NSString stringWithFormat:@"123%@",@"2"];
+//        string_weak = string;
+//    }
+//    NSString *string = nil;
+//    @autoreleasepool {
+//        string = [NSString stringWithFormat:@"123%@",@"3"];
+//        string_weak = string;
+//    }
+    
+//    NSLog(@"%@",string_weak);
     [self initView];
     
+    /*
     RACSignal *validUsernameSignal =
     [self.userNameTxt.rac_textSignal
      map:^id(NSString *text) {
@@ -126,6 +157,10 @@ static void *ObservationContext = &ObservationContext;
         self.loginBtn.enabled = [enable boolValue];
         self.loginBtn.backgroundColor = [enable boolValue]?[UIColor lightGrayColor]:[UIColor grayColor];
     }];
+    
+    [[self.loginBtn rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(id x) {
+        NSLog(@"click");
+    }];*/
 }
 
 - (void)test4 {
@@ -210,6 +245,12 @@ static void *ObservationContext = &ObservationContext;
         make.right.mas_equalTo(ws.view).with.offset(-20);
         make.height.mas_equalTo(@44);
     }];
+    
+//    [loginBtn addTarget:self action:@selector(loginClick) forControlEvents:UIControlEventTouchUpInside];
+}
+
+- (void)loginClick {
+    NSLog(@"click");
 }
 
 - (void)didReceiveMemoryWarning {

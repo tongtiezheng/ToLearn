@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'D6E322AD7B837E0A64891680'
+               BlueprintIdentifier = '529D424BBBA07072F262F22F'
                BlueprintName = 'AFMInfoBanner'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libAFMInfoBanner.a'>

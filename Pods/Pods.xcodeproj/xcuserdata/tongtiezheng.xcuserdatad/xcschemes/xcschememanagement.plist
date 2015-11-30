@@ -74,7 +74,17 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>UIColor-Utilities.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>XLForm.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>YYText.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -87,6 +97,11 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>0B9AC6F2212C3BEDF70A295B5E4207AB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>12AC35F9C569FA2A4543EFEDD802D2C9</key>
 		<dict>
 			<key>primary</key>
@@ -97,7 +112,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>258C5FB53E9317A54979CA03255AF230</key>
+		<key>2C8B0E89805462DEB9EE91CE683E8326</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -112,22 +127,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>46164A34CD41E0582658327CA9CB4042</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>53480ED0BE09FF49E34B1702D485CAAB</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>5C41E2F11494BA88B2AB9004CF8B23F7</key>
+		<key>5B73BFA86CAF92709CF9615EEDC17FDF</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>6E0F3E559DBF5F67A6DC54F6AD094E3F</key>
+		<key>5C1CD7DE97BE005040C7CF7073FF19B7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5E12AE5B185E5201BBD4CCA527F78DC9</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -137,17 +152,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>7BDE123B7D3B81467DB29AAB22CB61F5</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>8F74D9EA91F4C43190670066BAC37D44</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A06476455E6301D7CA91411520131AAB</key>
+		<key>9AAD6688C5112981FCA1117DC21BE2C7</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -157,12 +167,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C25061DEE305ECE596D76BF20A55B5BF</key>
+		<key>D4A33050B4D85B15E6C0FA5064F3B53E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>E8F27F1384E267695D1E8A57B629938C</key>
+		<key>D98D51D69484845AFC173D2395296850</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DC4615D0EF31B680B7DA319485FEE078</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FCE7673D37C8E411BEF78A609CC9A57C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
